@@ -1,0 +1,9 @@
+C:\Users\Elena\Desktop\ToDoListASP.NET\ToDoListASP.NET\bin\Debug\netcoreapp1.1\ToDoListASP.NET.deps.json
+C:\Users\Elena\Desktop\ToDoListASP.NET\ToDoListASP.NET\bin\Debug\netcoreapp1.1\ToDoListASP.NET.runtimeconfig.json
+C:\Users\Elena\Desktop\ToDoListASP.NET\ToDoListASP.NET\bin\Debug\netcoreapp1.1\ToDoListASP.NET.runtimeconfig.dev.json
+C:\Users\Elena\Desktop\ToDoListASP.NET\ToDoListASP.NET\bin\Debug\netcoreapp1.1\ToDoListASP.NET.dll
+C:\Users\Elena\Desktop\ToDoListASP.NET\ToDoListASP.NET\bin\Debug\netcoreapp1.1\ToDoListASP.NET.pdb
+C:\Users\Elena\Desktop\ToDoListASP.NET\ToDoListASP.NET\obj\Debug\netcoreapp1.1\ToDoListASP.NET.csprojResolveAssemblyReference.cache
+C:\Users\Elena\Desktop\ToDoListASP.NET\ToDoListASP.NET\obj\Debug\netcoreapp1.1\ToDoListASP.NET.AssemblyInfo.cs
+C:\Users\Elena\Desktop\ToDoListASP.NET\ToDoListASP.NET\obj\Debug\netcoreapp1.1\ToDoListASP.NET.dll
+C:\Users\Elena\Desktop\ToDoListASP.NET\ToDoListASP.NET\obj\Debug\netcoreapp1.1\ToDoListASP.NET.pdb

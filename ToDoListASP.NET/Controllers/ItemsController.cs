@@ -5,18 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ToDoListASP.NET.Models;
 using Microsoft.EntityFrameworkCore;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ToDoListASP.NET.Controllers
 {
     public class ItemsController : Controller
     {
         private ToDoListContext db = new ToDoListContext();
+
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View(db.Items.ToList());
+            return View(db.Items.Include(items => items.Category).ToList());
         }
 
         public IActionResult Details(int id)
@@ -27,6 +27,7 @@ namespace ToDoListASP.NET.Controllers
 
         public IActionResult Create()
         {
+            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name");
             return View();
         }
 
@@ -41,6 +42,7 @@ namespace ToDoListASP.NET.Controllers
         public IActionResult Edit(int id)
         {
             var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
+            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name");
             return View(thisItem);
         }
 

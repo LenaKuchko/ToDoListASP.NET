@@ -1,10 +1,9 @@
-﻿@model IEnumerable<ToDoListASP.NET.Models.Item>
+﻿@{ 
+    ViewData["Title"] = "To Do List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<ToDoListASP.NET.Models.Item>
 
-<html>
-<head>
-    <title>To Do List</title>
-</head>
-<body>
     <h2>To Do List</h2>
     <h4>@Html.DisplayNameFor(model => model.Description)</h4>
     <ul>
@@ -19,5 +18,3 @@
         }
     </ul>
     <p>@Html.ActionLink("Add new item", "Create")</p>
-</body>
-</html>

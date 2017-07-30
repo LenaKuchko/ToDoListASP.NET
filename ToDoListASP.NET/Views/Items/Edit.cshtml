@@ -1,10 +1,9 @@
-﻿@model ToDoListASP.NET.Models.Item
+﻿@{ 
+    ViewData["Title"] = "To Do List";
+    Layout = "~/View/Shared/_layout.cshtml";
+}
+@model ToDoListASP.NET.Models.Item
 
-<html>
-<head>
-    <title>To Do List - Edit</title>
-</head>
-<body>
     <h2>Edit</h2>
     <hr />
     <h4>Edit this task: @Html.DisplayFor(model => model.Description)</h4>
@@ -19,6 +18,3 @@
         <input type="submit" value="Save" />
     }
     <p>@Html.ActionLink("Back to list", "Index")</p>
-
-</body>
-</html>
